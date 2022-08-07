@@ -7,7 +7,7 @@ extends KinematicBody2D
 
 var direction = Vector2()
 
-const MAX_SPEED = 1200
+const MAX_SPEED = 3500
 
 var speed = 0
 var motion = Vector2()
@@ -26,7 +26,7 @@ func cartesian_to_isometric(vector):
 func _ready():
 	# The Player is now a child of the YSort node, so we have to go 1 more step up the node tree
 	grid = get_parent().get_parent()
-#	type = grid.PLAYER
+	type = grid.PLAYER
 	set_physics_process(true)
 
 

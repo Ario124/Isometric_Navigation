@@ -8,7 +8,7 @@ var tile_size = get_cell_size()
 # we have to offset the objects on the Y axis to center them on the tiles
 var tile_offset = Vector2(0, tile_size.y / 2)
 
-var grid_size = Vector2(16, 16)
+var grid_size = Vector2(160, 160)
 
 var grid = []
 onready var Obstacle = preload("res://Obstacle.tscn")
